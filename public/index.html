@@ -1,0 +1,10 @@
+<h1>TikTok Downloader</h1>
+<input id="url" placeholder="رابط الفيديو">
+<button onclick="go()">تحميل</button>
+
+<script>
+function go(){
+let url=document.getElementById("url").value;
+window.open("/download?url="+encodeURIComponent(url));
+}
+</script>
